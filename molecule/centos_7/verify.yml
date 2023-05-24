@@ -1,0 +1,18 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Vector Install 
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Vector Install 
+    package:
+        name: "vector"
+        state: "installed"
+    check_mode: yes
+    register: pkg_status
+  - name: check is vector install
+    assert:
+      that: 
+        - not pkg_status.changed
+  
