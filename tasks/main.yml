@@ -8,11 +8,11 @@
       ansible.builtin.yum:
         name:
           - vector-{{ vector_version }}.rpm
-      notify: Start Vector service
-    - name: Flush handlers
-      meta: flush_handlers
-    - name: Ensure vector is running
-      become: true
-      ansible.builtin.service:
-        name: vector
-        state: started
+            #notify: Start Vector service
+            #- name: Flush handlers
+            #meta: flush_handlers
+            #- name: Ensure vector is running
+            #become: true
+            #ansible.builtin.service:
+            #name: vector
+            #state: started
