@@ -10,7 +10,7 @@ pipeline {
         }
         stage ('Second') {
             steps {
-                sh 'sudo sed -i \'s/vector-role/declarative pipeline/\' molecule/centos_7/converge.yml'
+                sh 'sudo sed -i \'s/vector-role/multibranch pipeline/\' molecule/centos_7/converge.yml'
             }
         }
         stage ('Third') {
