@@ -1,7 +1,7 @@
 Vector Role
 =========
 
-This role can install Vector on EL
+this role can install Vector on EL
 
 Example Playbook
 ----------------
